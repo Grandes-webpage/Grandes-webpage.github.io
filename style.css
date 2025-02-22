@@ -9,10 +9,12 @@ body {
 .contenitore {
     max-width: 800px;
     margin: 0 auto;
-    background-color: white;
+    background-color: light blue;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
 }
 
 h1 {
@@ -23,5 +25,5 @@ h1 {
 p {
     line-height: 1.6;
     color: black;
-    text-align: center;
+    text-align: left;
 }

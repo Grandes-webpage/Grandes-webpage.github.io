@@ -18,11 +18,3 @@ body {
   /* Centra solo il paragrafo p */
   text-align: center;
 }
-
-img {
-  /* Centra l'immagine */
-  display: block;
-  margin: 0 auto;
-  height: 100px;
-  width: 100px;
-}

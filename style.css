@@ -1,27 +1,18 @@
-body{
-  font-style:TimesNewRoman;
-  background-color: light blue;
+css
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: lightblue;
 }
-.titolo pagina{ 
-color: black;
-  font-style: italic;
-  font-weight: bold;
-  text-align: centre;
-  }
-.primo paragrafo{
-  color: black;
-  font-style: italic;
-   text-align: centre;
-  }
-h1{ 
+
+.titolo-pagina { 
   color: black;
   font-style: italic;
   font-weight: bold;
-  text-align: centre;
-  {
-p{  
-  text-align: centre;
+  text-align: center;
+}
+
+.primo-paragrafo {
   color: black;
   font-style: italic;
-  font-weight: bold;
-  {
+  text-align: center;
+}

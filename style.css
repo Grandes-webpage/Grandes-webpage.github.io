@@ -19,6 +19,9 @@ body {
   text-align: center;
 }
 .germano-reale{
-  text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
   border-radius: 30px;
 }

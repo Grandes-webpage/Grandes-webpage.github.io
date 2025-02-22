@@ -8,11 +8,20 @@ body {
   color: black;
   font-style: italic;
   font-weight: bold;
+  /* Centra solo il titolo h1 */
   text-align: center;
+  margin-top: 20px;
 }
 
 .primo-paragrafo {
   color: black;
   font-style: italic;
+  /* Centra solo il paragrafo p */
   text-align: center;
+}
+
+img {
+  /* Centra l'immagine */
+  display: block;
+  margin: 0 auto;
 }

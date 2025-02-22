@@ -1,9 +1,9 @@
 css
 body {
-    font-family: Arial, sans-serif;
+    font-family: TimesNewRoman;
     margin: 0;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: light blue;
 }
 
 .contenitore {
@@ -16,11 +16,12 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: black;
     text-align: center;
 }
 
 p {
     line-height: 1.6;
-    color: #666;
+    color: black;
+    text-align: center;
 }

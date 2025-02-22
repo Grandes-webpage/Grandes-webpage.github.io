@@ -1,1 +1,13 @@
-
+body{
+  font-style:TimesNewRoman;
+  background-color: light blue;
+}
+.titolo della pagina{ 
+color: black;
+  font-style: italic;
+  font-weight: bold;
+  }
+.primo paragrafo{
+  color: black;
+  font-style: italic;
+  }

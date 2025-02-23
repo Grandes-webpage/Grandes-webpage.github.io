@@ -17,6 +17,7 @@ body {
   font-style: italic;
   /* Centra solo il paragrafo p */
   text-align: center;
+  text-size: 20px;
 }
 .germano-reale{
   display: block;

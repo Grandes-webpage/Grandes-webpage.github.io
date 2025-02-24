@@ -26,3 +26,25 @@ body {
   width: 250px;
   border-radius: 30px;
 }
+/* Per centrare il contenitore dei bottoni */
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+/* Stile per i bottoni (opzionale ma consigliato) */
+.button-container button {
+  padding: 8px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+  background-color: deep blue;
+}

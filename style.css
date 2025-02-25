@@ -18,8 +18,9 @@ body {
   font-style: italic;
   /* Centra solo il paragrafo p */
   text-align: center;
-  text-size: 20px;
+  font-size: 20px;
 }
+
 .germano-reale{
   display: block;
   margin: 0 auto;
@@ -27,6 +28,7 @@ body {
   width: 250px;
   border-radius: 30px;
 }
+
 /* Per centrare il contenitore dei bottoni */
 .button-container {
   display: flex;
@@ -35,6 +37,7 @@ body {
   gap: 10px;
   margin: 15px 0;
 }
+
 /* Stile per i bottoni (opzionale ma consigliato) */
 .button-container button {
   padding: 8px 15px;
@@ -47,5 +50,5 @@ body {
 }
 
 .button-container button:hover {
-  background-color: deep blue;
+  background-color: darkblue;
 }

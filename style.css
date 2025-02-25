@@ -26,7 +26,8 @@ body {
   margin: 0 auto;
   height: 250px;
   width: 250px;
-  border-radius: 30px;
+  border-radius: 50%;  /* Rende l'immagine perfettamente rotonda */
+  object-fit: cover;   /* Assicura che l'immagine riempia correttamente lo spazio circolare */
 }
 
 /* Per centrare il contenitore dei bottoni */

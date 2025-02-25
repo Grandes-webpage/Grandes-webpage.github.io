@@ -26,7 +26,7 @@ body {
   width: 250px;
   border-radius: 30px;
 }
-.h3descrizione{
+ h3 {
   text-align: center;
 }
 /* Per centrare il contenitore dei bottoni */

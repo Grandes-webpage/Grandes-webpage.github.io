@@ -1,5 +1,5 @@
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;/* font-family: "Times New Roman", Times, serif;: Specifica una lista di famiglie di font da utilizzare. In questo caso, il browser utilizzerà prima "Times New Roman". Se questo font non è disponibile, userà "Times". Se nessuno dei due è disponibile, userà un font generico serif. */
   background-color: lightblue;
   text-align: center;
 }
@@ -8,18 +8,13 @@ body {
   color: black;
   font-style: italic;
   font-weight: bold;
-  /* Centra solo il titolo h1 */
-  text-align: center;
-  margin-top: 20px;
+  margin-top: 20px;/* Il comando margin-top: 20px; aggiunge un margine di 20 pixel nella parte superiore dell'elemento, creando uno spazio tra l'elemento e gli elementi sopra di esso. */
 }
 
 .primo-paragrafo {
   color: black;
   font-style: italic;
-  /* Centra solo il paragrafo p */
-  text-align: center;
-  font-size: 20px;
-}
+  font-size: 20px;/* Se non ci sono altre specifiche di dimensione del font per gli elementi superiori, la dimensione del font predefinita del browser, che è solitamente 16px, sarà utilizzata. */}
 
 .germano-reale{
   display: block;
@@ -27,29 +22,29 @@ body {
   height: 250px;
   width: 250px;
   border-radius: 50%;  /* Rende l'immagine perfettamente rotonda */
-  object-fit: cover;   /* Assicura che l'immagine riempia correttamente lo spazio circolare */
+  object-fit: cover;   /* Assicura che l'immagine riempia correttamente lo spazio circolare, forza l'immagine a coprire l'intero contenitore, mantenendo il rapporto di aspetto originale. In questo modo, l'immagine può essere ingrandita o ritagliata, ma non verrà distorta, riempiendo completamente l'area circolare definita da border-radius: 50%;. */
 }
 
 /* Per centrare il contenitore dei bottoni */
 .button-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 15px 0;
+  display: flex;/*display: flex;: Imposta il contenitore come un contenitore flessibile (flexbox), che consente di disporre gli elementi figli in modo flessibile.*/
+  justify-content: center;/*justify-content: center;: Centra orizzontalmente tutti gli elementi figli all'interno del contenitore flessibile.*/
+  flex-wrap: wrap;/*flex-wrap: wrap;: Permette agli elementi figli di andare a capo se non c'è abbastanza spazio in una singola riga.*/
+  gap: 10px;/*gap: 10px;: Imposta uno spazio di 10px tra gli elementi figli.*/
+  margin: 15px 0;/*margin: 15px 0;: Aggiunge un margine di 15px sopra e sotto il contenitore.*/
 }
 
 /* Stile per i bottoni (opzionale ma consigliato) */
 .button-container button {
-  padding: 8px 15px;
+  padding: 8px 15px;/* padding: 8px 15px;: Aggiunge uno spazio interno di 8px sopra e sotto e 15px a destra e sinistra dell'elemento. */
   background-color: blue;
   color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  border: none;/* border: none;: Rimuove qualsiasi bordo dall'elemento.*/
+  border-radius: 4px;/* border-radius: 4px;: Arrotonda gli angoli dell'elemento con un raggio di 4px. */
+  cursor: pointer;/* cursor: pointer;: Cambia il cursore a una mano (pointer) quando si passa sopra l'elemento, indicando che è cliccabile. */
+  transition: background-color 0.3s;/* transition: background-color 0.3s;: Aggiunge una transizione fluida di 0.3 secondi per il cambiamento del colore di sfondo.*/
 }
 
 .button-container button:hover {
-  background-color: darkblue;
+  background-color: darkblue;/* .button-container button:hover { background-color: darkblue; }: Questo comando cambia il colore di sfondo del bottone all'interno del contenitore .button-container a "blu scuro" quando l'utente passa il cursore del mouse sopra il bottone (:hover). */
 }

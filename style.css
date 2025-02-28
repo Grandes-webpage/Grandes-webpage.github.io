@@ -14,7 +14,8 @@ body {
 .primo-paragrafo {
   color: black;
   font-style: italic;
-  font-size: 20px;/* Se non ci sono altre specifiche di dimensione del font per gli elementi superiori, la dimensione del font predefinita del browser, che è solitamente 16px, sarà utilizzata. */}
+  font-size: 20px;/* Se non ci sono altre specifiche di dimensione del font per gli elementi superiori, la dimensione del font predefinita del browser, che è solitamente 16px, sarà utilizzata. */
+}
 
 .germano-reale{
   display: block;

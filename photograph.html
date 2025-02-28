@@ -42,7 +42,7 @@
     </ul>
   </nav>
   <h1> Gallery </h1>
-  <img src="IMG-20250221-WA0039.jpg" alt="vecchia salita con gradini in Liguria"/>
+  <img src="images/IMG-20250221-WA0039.jpg" alt="vecchia salita con gradini in Liguria"/>
   <div class="like-container">
     <button onclick="likeImage('like-counter-1')">Like</button> <span id="like-counter-1">0</span>
     <button onclick="unlikeImage('unlike-counter-1')">Unlike</button> <span id="unlike-counter-1">0</span>
@@ -73,13 +73,24 @@
     <button onclick="unlikeImage('unlike-counter-6')">Unlike</button> <span id="unlike-counter-6">0</span>
   </div>
   <script>
-    function likeImage(counterId) {
+ function likeImage(counterId) {
+      if (localStorage.getItem(counterId) === "liked") {
+        alert("Hai già messo un like!");
+        return;
+      }
       var counter = document.getElementById(counterId);
       counter.textContent = parseInt(counter.textContent) + 1;
+      localStorage.setItem(counterId, "liked");
     }
+
     function unlikeImage(counterId) {
+      if (localStorage.getItem(counterId) === "unliked") {
+        alert("Hai già messo un unlike!");
+        return;
+      }
       var counter = document.getElementById(counterId);
       counter.textContent = parseInt(counter.textContent) + 1;
+      localStorage.setItem(counterId, "unliked");
     }
   </script>
 </body>

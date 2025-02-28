@@ -1,48 +1,84 @@
 <!doctype html>
-<html lang="en";>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
     <title>Photograph</title>
-   <style>
-     h1{
-       color: blue;
-       font-style: italic;
-     }
-     body{
-       font-family: "Times New Roman", Times, serif;
-       text-align: center;
-       background-color: lightblue;
-     }
-     nav{
-       text-align: left;
-     }
-     img{
-        display: block;
-        margin: auto;
+    <style>
+      h1 {
+        color: blue;
+        font-style: italic;
+      }
+      body {
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        background-color: lightblue;
+      }
+      nav {
+        text-align: left;
+      }
+      img {
         width: 200px;
         height: 200px;
         border-radius: 10px;
-     }
-   </style>
-   </head>
+        display: block;
+        margin: auto;
+      }
+      .like-container {
+        text-align: left;
+        margin: auto;
+        width: 200px;
+      }
+    </style>
+  </head>
 <body>
-  
-<!-- questo è il menù di navigazione -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="science.html">Science</a></li>
-        <li><a href="gardening.html">Gardening</a></li>
-        <li><a href="coding.html">Coding</a></li>
-      </ul>
-    </nav>
+  <!-- questo è il menù di navigazione -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="science.html">Science</a></li>
+      <li><a href="gardening.html">Gardening</a></li>
+      <li><a href="coding.html">Coding</a></li>
+    </ul>
+  </nav>
   <h1> Gallery </h1>
-  <img src="IMG-20250221-WA0040.jpg" alt="vecchia salita con gradini in Liguria"/>
-  <button>like</button>
+  <img src="images/IMG-20250221-WA0040.jpg" alt="vecchia salita con gradini in Liguria"/>
+  <div class="like-container">
+    <button onclick="likeImage('like-counter-1')">Like</button> <span id="like-counter-1">0</span>
+    <button onclick="unlikeImage('unlike-counter-1')">Unlike</button> <span id="unlike-counter-1">0</span>
+  </div>
   <img src="images/IMG-20250221-WA0035.jpg" alt="scarabeo sputa sangue"/>
+  <div class="like-container">
+    <button onclick="likeImage('like-counter-2')">Like</button> <span id="like-counter-2">0</span>
+    <button onclick="unlikeImage('unlike-counter-2')">Unlike</button> <span id="unlike-counter-2">0</span>
+  </div>
   <img src="images/IMG-20250221-WA0037.jpg" alt="scarabeo sputa sangue che si allontana"/>
+  <div class="like-container">
+    <button onclick="likeImage('like-counter-3')">Like</button> <span id="like-counter-3">0</span>
+    <button onclick="unlikeImage('unlike-counter-3')">Unlike</button> <span id="unlike-counter-3">0</span>
+  </div>
   <img src="images/IMG-20250221-WA0038.jpg" alt="sculture in vetro di un'anatra e di un pesce"/>
+  <div class="like-container">
+    <button onclick="likeImage('like-counter-4')">Like</button> <span id="like-counter-4">0</span>
+    <button onclick="unlikeImage('unlike-counter-4')">Unlike</button> <span id="unlike-counter-4">0</span>
+  </div>
   <img src="images/IMG-20250221-WA0040.jpg" alt="cane di piccola taglia con espressione un po' spaventata"/>
-  <img src="images/IMG-20250221-WA0041.jpg" alt="piccolo veliero incastonato in un muero in Liguria"/>
+  <div class="like-container">
+    <button onclick="likeImage('like-counter-5')">Like</button> <span id="like-counter-5">0</span>
+    <button onclick="unlikeImage('unlike-counter-5')">Unlike</button> <span id="unlike-counter-5">0</span>
+  </div>
+  <img src="images/IMG-20250221-WA0041.jpg" alt="piccolo veliero incastonato in un muro in Liguria"/>
+  <div class="like-container">
+    <button onclick="likeImage('like-counter-6')">Like</button> <span id="like-counter-6">0</span>
+    <button onclick="unlikeImage('unlike-counter-6')">Unlike</button> <span id="unlike-counter-6">0</span>
+  </div>
+  <script>
+    function likeImage(counterId) {
+      var counter = document.getElementById(counterId);
+      counter.textContent = parseInt(counter.textContent) + 1;
+    }
+    function unlikeImage(counterId) {
+      var counter = document.getElementById(counterId);
+      counter.textContent = parseInt(counter.textContent) + 1;
+    }
+  </script>
 </body>
 </html>

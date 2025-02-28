@@ -16,8 +16,9 @@
         text-align: left;
       }
       img {
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
         border-radius: 10px;
         display: block;
         margin: auto;
@@ -25,7 +26,8 @@
       .like-container {
         text-align: left;
         margin: auto;
-        width: 200px;
+        width: 100%;
+        max-width: 600px;
       }
     </style>
   </head>
@@ -40,7 +42,7 @@
     </ul>
   </nav>
   <h1> Gallery </h1>
-  <img src="images/IMG-20250221-WA0040.jpg" alt="vecchia salita con gradini in Liguria"/>
+  <img src="IMG-20250221-WA0039.jpg" alt="vecchia salita con gradini in Liguria"/>
   <div class="like-container">
     <button onclick="likeImage('like-counter-1')">Like</button> <span id="like-counter-1">0</span>
     <button onclick="unlikeImage('unlike-counter-1')">Unlike</button> <span id="unlike-counter-1">0</span>

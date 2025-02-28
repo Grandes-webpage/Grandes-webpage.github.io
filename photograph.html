@@ -73,24 +73,42 @@
     <button onclick="unlikeImage('unlike-counter-6')">Unlike</button> <span id="unlike-counter-6">0</span>
   </div>
   <script>
- function likeImage(counterId) {
-      if (localStorage.getItem(counterId) === "liked") {
-        alert("Hai già messo un like!");
-        return;
-      }
+     function toggleLike(counterId, likeButtonId, unlikeButtonId) {
       var counter = document.getElementById(counterId);
-      counter.textContent = parseInt(counter.textContent) + 1;
-      localStorage.setItem(counterId, "liked");
+      var likeButton = document.getElementById(likeButtonId);
+      var unlikeButton = document.getElementById(unlikeButtonId);
+
+      if (likeButton.classList.contains('liked')) {
+        counter.textContent = parseInt(counter.textContent) - 1;
+        likeButton.classList.remove('liked');
+      } else {
+        counter.textContent = parseInt(counter.textContent) + 1;
+        likeButton.classList.add('liked');
+        if (unlikeButton.classList.contains('unliked')) {
+          var unlikeCounter = document.getElementById(unlikeButtonId.replace('unlike-button', 'unlike-counter'));
+          unlikeCounter.textContent = parseInt(unlikeCounter.textContent) - 1;
+          unlikeButton.classList.remove('unliked');
+        }
+      }
     }
 
-    function unlikeImage(counterId) {
-      if (localStorage.getItem(counterId) === "unliked") {
-        alert("Hai già messo un unlike!");
-        return;
-      }
+    function toggleUnlike(counterId, unlikeButtonId, likeButtonId) {
       var counter = document.getElementById(counterId);
-      counter.textContent = parseInt(counter.textContent) + 1;
-      localStorage.setItem(counterId, "unliked");
+      var unlikeButton = document.getElementById(unlikeButtonId);
+      var likeButton = document.getElementById(likeButtonId);
+
+      if (unlikeButton.classList.contains('unliked')) {
+        counter.textContent = parseInt(counter.textContent) - 1;
+        unlikeButton.classList.remove('unliked');
+      } else {
+        counter.textContent = parseInt(counter.textContent) + 1;
+        unlikeButton.classList.add('unliked');
+        if (likeButton.classList.contains('liked')) {
+          var likeCounter = document.getElementById(likeButtonId.replace('like-button', 'like-counter'));
+          likeCounter.textContent = parseInt(likeCounter.textContent) - 1;
+          likeButton.classList.remove('liked');
+        }
+      }
     }
   </script>
 </body>
